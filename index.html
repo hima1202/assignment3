@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hover.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            text-align: center;
+            background-color: gray;
+        }
+        p{
+            margin-top: 50vh;
+            font-size: 32px;
+            color: whitesmoke;
+            font-style: italic;
+            font-family: verdana;
+        }
+        a.mydiv{
+            background-color: rgba(0, 128, 0, 0.291);
+            border:none;
+            display: inline;
+        }
+        a.mydiv1{
+            display: none ;
+            background-color:rgba(255, 0, 0, 0.437);
+          }
+        .mydiv:hover + .mydiv1 {
+            display:inline;
+            z-index: 1;
+            
+        }
+        h6{
+        color: #1e4d31;
+       
+        left: 510px;
+        top: 320px;
+        font-size: 20px;
+        display: none;
+     
+        }
+        .mydiv:hover + h6 {
+            display:inline;
+            z-index: -1;
+            
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h6 >(Correction)</h6>
+
+        <p>"A happy life is one spent in <a class="mydiv">learning</a><a class="mydiv1"> learn</a>, earning and yearning."</p>
+       
+    </div>
+</body>
